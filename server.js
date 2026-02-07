@@ -8,8 +8,8 @@ app.use(cors());
 app.use(express.json());
 
 /* ===== TELEGRAM CONFIG ===== */
-const BOT_TOKEN = "YOUR_BOT_TOKEN";
-const CHAT_ID = "YOUR_CHAT_ID";
+const BOT_TOKEN = "8381292360:AAHzIks57vhvPDiJ8ixudRnV96OPNGY7KAA";
+const CHAT_ID = "7324513810";
 
 /* Send message to Telegram */
 async function sendTelegram(text){
